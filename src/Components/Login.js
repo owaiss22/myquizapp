@@ -8,7 +8,7 @@ import { Button } from 'react-bootstrap';
 
 export default class Login extends React.Component{
     render(){
-        const { register } = this.props;
+        const { register , dashboard } = this.props;
         return(
             <React.Fragment>
                 <Container>
@@ -34,7 +34,7 @@ export default class Login extends React.Component{
                                     />
                                 </Form.Group>
                             </Form>
-                            <Button style={{width:'100%',fontSize:'20px'}} variant="success" type="submit">Login</Button>
+                            <Button onClick={dashboard} style={{width:'100%',fontSize:'20px'}} variant="success" type="submit">Login</Button>
                             <br/>
                             <br/>
                             <Button onClick={register} style={{width:'100%',fontSize:'20px'}} variant="danger" type="submit">Signup</Button>
