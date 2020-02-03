@@ -9,6 +9,7 @@ import { Button } from 'react-bootstrap';
 
 export default class Dash extends React.Component {
     render() {
+        const { quiz } = this.props;
         return (
             <React.Fragment>
                 <Container>
@@ -36,7 +37,7 @@ export default class Dash extends React.Component {
                                     Welcome to Quiz<br/>
                                     5 Questions<br/>
                                     Time: 1 min<br/><br/>
-                                    <Button style={{width:'50%'}} variant="success">Start Quiz</Button>
+                                    <Button onClick={quiz} style={{width:'50%'}} variant="success">Start Quiz</Button>
                                 </Card.Text>
                             </Card>
                         </Col>
