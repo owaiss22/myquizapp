@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 
 export default class QuizScreen extends React.Component {
     render() {
@@ -12,7 +13,25 @@ export default class QuizScreen extends React.Component {
                     <Card.Title >Question 1</Card.Title>
                     <Card.Text>
                         Html stands for:
-                        <form>
+                        <Form.Check
+                            type="radio"
+                            label=" Hyper Text Markup Language"
+                            name="formHorizontalRadios"
+                            id="formHorizontalRadios1"
+                        />
+                        <Form.Check
+                            type="radio"
+                            label=" Hyper Transform Markup Language"
+                            name="formHorizontalRadios"
+                            id="formHorizontalRadios2"
+                        />
+                        <Form.Check
+                            type="radio"
+                            label=" Hyper Text Makeup Language "
+                            name="formHorizontalRadios"
+                            id="formHorizontalRadios3"
+                        />
+                        {/* <form>
                             <div className="radio">
                                 <label>
                                     <input type="radio" value="option1" checked={true} />
@@ -31,7 +50,7 @@ export default class QuizScreen extends React.Component {
                                     Hyper Text Makeup Language 
                                 </label>
                             </div>
-                        </form>
+                        </form> */}
                         <br />
                         <Button style={{ width: '50%' }} variant="success">Next</Button>
                     </Card.Text>
